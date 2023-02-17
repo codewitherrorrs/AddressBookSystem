@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the Address Book System");
+            CreateContact c1 = new CreateContact("Sagar","Shahu","abc@gmail.com","MahanandaColony","Nigeria","Mahabaleshwar",440023,1234567890);
         }
     }
 }
