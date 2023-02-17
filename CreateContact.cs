@@ -13,10 +13,10 @@ namespace AddressBookSystem
         public string Email;
         public string Address;
         public string City;
-        public int Pincode;
-        public int Phone;
+        public string Pincode;
+        public string Phone;
         public string State;
-        public CreateContact(string fname,string lname , string email , string address , string city , string state , int pincode , int phone ) 
+        public CreateContact(string fname,string lname , string email , string address , string city , string state , string pincode , string phone ) 
         {
             this.FirstName = fname;
             this.LastName = lname;
