@@ -13,7 +13,7 @@
             //createContactBuiltArray.run();
 
             AddressBookMain.AddContact();
-            //AddressBookMain.Display();
+            AddressBookMain.Display();
 
         }
 
