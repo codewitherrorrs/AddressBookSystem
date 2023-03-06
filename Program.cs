@@ -4,16 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            //CreatContact c1 = new CreatContact();
-            //String[] names = { "Sagar", "Krishna", "Pankaj", "Dharani" };
-            //c1.change(names);
+            List<Person> people = new List<Person>();
+            people.Add(new Person { firstName = "Sagar",lastName = "Shahu",city = "Nagpur",state = "Maharashtra", zipcode = "440023",country = "India",phone = "55455665",email = "shahu@gmail.com" });
 
-            //CreateContactBuiltArray createContactBuiltArray = new CreateContactBuiltArray();
-            //createContactBuiltArray.addContact("sagar","shahu","nag","sss","sss","15544555","444454","sss@gmail.com");
-            //createContactBuiltArray.run();
-
-            AddressBookMain.AddContact();
-            AddressBookMain.Display();
+            Person newEntry1 = new Person { firstName = "Sagar", lastName = "Shahu", city = "Nagpur", state = "Maharashtra", zipcode = "440023", country = "India", phone = "55455665", email = "shahu@gmail.com" };
+            if (people.Any(e => e.firstName == newEntry1.firstName))
+            {
+                Console.WriteLine("Duplicate entry: {0}", newEntry1.firstName);
+            }
+            else
+            {
+                people.Add(newEntry1);
+            }
 
         }
 

@@ -4,8 +4,8 @@ namespace AddressBookSystem
 {
     public class CreatContact
     {
-        public String name;
-        public void change(String[] n)
+        public string name;
+        public void change(string[] n)
         {
             for (int i = 0; i < n.Length; i++)
             {
@@ -14,7 +14,7 @@ namespace AddressBookSystem
             Console.WriteLine("Enter the index Value to Delete : ");
             int index = Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter the name which you want to delete : ");
-            String name = Console.ReadLine();
+            string name = Console.ReadLine();
             if (n[index] == name)
             {
                 n[index] = " ";
